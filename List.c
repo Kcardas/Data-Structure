@@ -102,8 +102,8 @@ void invert_list(node** head){
     //return head;
 }
 
-void invert_list_stack(node** head){
-    node* current = *head;
+node* invert_list_stack(node* head){
+    node* current = head;
     node* temp = NULL;
 
     while(current != NULL){
@@ -114,7 +114,9 @@ void invert_list_stack(node** head){
         current = current->next;
     }
 
-    *head = temp;
+    //*head = temp;
+
+    return temp;
 }
 
 void clear(node** head){

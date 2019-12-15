@@ -27,7 +27,7 @@ node* find_node(node* head, int data);
 
 void invert_list(node** head);
 
-void invert_list_stack(node** head);
+node* invert_list_stack(node* head);
 
 void clear(node** head);
 
